@@ -11,7 +11,6 @@ this doesn't work for some reason
 	--clr-white: #ffffff;
 	--clr-gray: #656565;
 	--clr-black: #000000;
-	--clr-tertiary: #382c40;
 	--clr-primary: #f7f2ff;
 	--clr-primary-2: #ebe4f7;
 	--clr-primary-3: #efe6ff;
@@ -46,6 +45,9 @@ nav ul {
 	align-items: center;
 	flex-wrap: wrap;
 	flex-grow: 1;
+}
+a{
+	text-decoration: none;
 }
 
 /*
@@ -143,14 +145,17 @@ footer .right {
 footer .right .footer-title {
 	margin-bottom: 0.375rem;
 }
-footer .right ul > li {
+
+/* NOTE: Flexbox here looks a bit of an overkill lol.
+	Should change to something else */
+footer .right ul li {
 	display: flex;
 	justify-content: right;
 	align-items: center;
 	font: 400 1rem var(--font-important);
 	color: var(--clr-gray);
 }
-footer .right ul > li > img {
+footer .right ul li img {
 	display: inline;
 	height: 1.2rem;
 	margin-left: 0.375rem;
